@@ -22,3 +22,6 @@ body {
 	height: 100vh;
 }
 
+.imgh img {
+	height: 50%;
+}
