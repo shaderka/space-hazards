@@ -12,16 +12,105 @@ h1,h2,h3,h4,h5,h6,p,ul {
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #000;
+	overflow: hidden;
+	
+	width: 100vw;
 }
 
-.imgh {
+header {
+	background-image: url(img/stars.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100.5vh;
+	width: 100vw;
+	position: relative;
+}
+
+.grey-dot img {
+	height: 100.5vh;
+}
+
+.grey-dot {
+	position: absolute;
+	right: 0;
+}
+
+.yelow-dot {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.yelow-dot img {
+	width: 50%;
+}
+
+nav a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+
+.nav {
+	border-bottom: 1px solid white;
+	width: 580px;
+	font-size: 30px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	justify-content: space-around;
+	margin-bottom: 110px;
+	margin-left: 60px;
 }
 
-.imgh img {
-	height: 50%;
+.header-container h1 {
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 70px;
+	margin-bottom: 30px;
+	margin-left: 60px;
+}
+
+.header-container {
+	width: 60vw;
+	padding: 20px 120px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.header-container p {
+	color: white;
+	font-size: 20px;
+	max-width: 650px;
+}
+
+a.btnstart {
+	background-image: url(img/btn-start.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 330px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	margin: 90px 140px;
+	transition: all .5s;
+}
+
+.start p {
+	color: black;
+	font-weight: 700;
+	font-size: 25px;
+	margin-left: 70px;
+	transition: all .5s;
+}
+
+a.btnstart:hover {
+	background-image: url(img/btn-start-yelow.png);
+}
+
+a.btnstart:hover > .start p {
+	color: #646464;
 }
