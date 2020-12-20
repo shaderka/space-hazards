@@ -13,7 +13,6 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
-	
 	width: 100vw;
 }
 
@@ -26,22 +25,29 @@ header {
 	position: relative;
 }
 
-.grey-dot img {
+.dot {
+	opacity: 100;
+	transition: transform 3s, opacity .2s 3s;
+}
+
+.dot:nth-of-type(1) img {
 	height: 100.5vh;
 }
 
-.grey-dot {
+.dot:nth-of-type(1) {
 	position: absolute;
 	right: 0;
+	z-index: 2;
+	transition: transform 3s, opacity 2s 3s;
 }
 
-.yelow-dot {
+.dot:nth-of-type(2) {
 	position: absolute;
 	left: 0;
 	bottom: 0;
 }
 
-.yelow-dot img {
+.dot:nth-of-type(2) img {
 	width: 50%;
 }
 
@@ -64,7 +70,7 @@ nav a {
 	margin-left: 60px;
 }
 
-.header-container h1 {
+.dot:nth-of-type(3) h1 {
 	text-transform: uppercase;
 	color: white;
 	font-family: 'Chelsea Market', cursive;
@@ -73,21 +79,21 @@ nav a {
 	margin-left: 60px;
 }
 
-.header-container {
+.dot:nth-of-type(3) {
 	width: 60vw;
 	padding: 20px 120px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 
-.header-container p {
+.dot:nth-of-type(3) p {
 	color: white;
 	font-size: 20px;
 	max-width: 650px;
 }
 
-a.btnstart {
-	background-image: url(img/btn-start.png);
+button.btnstart {
+	background: url(img/btn-start.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 330px;
@@ -97,20 +103,23 @@ a.btnstart {
 	text-decoration: none;
 	margin: 90px 140px;
 	transition: all .5s;
+	text-decoration: none;
+	outline: none;
+	border: 0;
 }
 
 .start p {
-	color: black;
+	color: black !important;
 	font-weight: 700;
 	font-size: 25px;
 	margin-left: 70px;
 	transition: all .5s;
 }
 
-a.btnstart:hover {
+button.btnstart:hover {
 	background-image: url(img/btn-start-yelow.png);
 }
 
-a.btnstart:hover > .start p {
-	color: #646464;
+button.btnstart:hover > .start p {
+	color: #646464 !important;
 }
