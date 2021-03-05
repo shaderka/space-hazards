@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100vw;
+}
+
+header {
+	background-image: url(img/stars.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100.5vh;
+	width: 100vw;
+	position: relative;
+}
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #9A12B3;
+z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(img/oval.svg) center center;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+
+.dot {
+	opacity: 100;
+	transition: transform 3s, opacity .2s 3s;
+}
+
+.dot:nth-of-type(1) img {
+	height: 100.5vh;
+}
+
+.dot:nth-of-type(1) {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	transition: transform 3s, opacity 2s 3s;
+}
+
+.dot:nth-of-type(2) {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.nadpis {
+/*	content: 'Опасность солнца';*/
+	width: 480px;
+	height: 130px;
+	color: black;
+	background-color: #feff93;
+/*	display: block;*/
+
+	font-family: 'Chelsea Market', cursive;
+	font-size: 50px;
+	text-align: center;
+
+	border-radius: 60px;
+	border: 10px solid white;
+	opacity: 0;
+	transition: all .6s;
+}
+
+.sonce:hover + .first {
+	opacity: 100;
+}
+
+.dot:nth-of-type(4):hover > .second {
+	opacity: 100;
+	transform: translateY(-40px);
+}
+
+.stantsia:hover + .third {
+	opacity: 100;
+	bottom: 20%;
+}
+
+.musor:hover + .fourth {
+	opacity: 100;
+	bottom: 20%;
+}
+
+.first {
+	position: absolute;
+	top: 55%;
+	right: 50px;
+	line-height: 110px;
+}
+
+.second {
+	position: absolute;
+	top: 0;
+	left: -550px;
+	line-height: 50px;
+}
+
+.third {
+	position: absolute;
+	bottom: 30%;
+	right: -650px;
+	line-height: 50px;
+	font-size: 47px;
+}
+
+.fourth {
+	position: absolute;
+	bottom: 30%;
+	left: -650px;
+	line-height: 50px;
+	font-size: 47px;
+	width: 550px;
+}
+
+.dot:nth-of-type(2) img {
+	width: 50%;
+	transition: width .6s;
+}
+
+.dot:nth-of-type(2) img:hover {
+	width: 55%;
+}
+
+nav a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+
+.nav {
+	border-bottom: 1px solid white;
+	width: 580px;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 110px;
+	margin-left: 60px;
+}
+
+.dot:nth-of-type(3) h1 {
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 70px;
+	margin-bottom: 30px;
+	margin-left: 60px;
+}
+
+.dot:nth-of-type(3) {
+	width: 60vw;
+	padding: 20px 120px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.dot:nth-of-type(3) p {
+	color: white;
+	font-size: 20px;
+	max-width: 650px;
+	text-align: center;
+}
+
+button.btnstart {
+	background: url(img/btn-start.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 330px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	margin: 90px 140px;
+	transition: all .5s;
+	text-decoration: none;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.start p {
+	color: black !important;
+	font-weight: 700;
+	font-size: 25px;
+	margin-left: 70px;
+	transition: all .5s;
+}
+
+button.btnstart:hover {
+	background-image: url(img/btn-start-yelow.png);
+}
+
+button.btnstart:hover > .start p {
+	color: #646464 !important;
+}
+
+.dot:nth-of-type(4) {
+	position: absolute;
+	top: 100px;
+	right: 150px;
+	transition-delay: 2s;
+}
+
+.asters {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	transition: all .5s;
+}
+
+.asters img {
+	width: 40%;
+}
+
+
+img.meteor1 {
+	position: absolute;
+	right: -50px;
+}
+
+img.meteor2 {
+	position: absolute;
+	right: 180px;
+	top: -50px;
+}
+
+img.meteor3 {
+	position: absolute;
+	top: 150px;
+	right: 100px;
+}
+
+img.meteor4 {
+	position: absolute;
+	top: 180px;
+	right: 350px
+}
+
+.asters:hover {
+	/*transform: translateX(-50px) translateY(50px);*/
+}
+
+
+
+.dot:nth-of-type(5) {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	width: 210px;
+	transition-delay: 2s;
+}
+
+.earth img {
+	width: 100%;
+	position: relative;
+}
+
+img.oblaka {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dot:nth-of-type(6) {
+	position: absolute;
+	left: 150px;
+	bottom: 0;
+	width: 400px;
+	transition-delay: 3s;
+}
+
+.dot:nth-of-type(6) img {
+	width: 100%;
+	transition: width .6s;
+}
+
+.dot:nth-of-type(6) img:hover {
+	width: 105%;
+}
+
+.dot:nth-of-type(7) {
+	position: absolute;
+	right: 150px;
+	bottom: 0;
+	width: 400px;
+	transition-delay: 3s;
+}
+
+.dot:nth-of-type(7) img {
+	width: 100%;
+	transition: width .6s;
+}
+
+.dot:nth-of-type(7) img:hover {
+	width: 105%;
+}

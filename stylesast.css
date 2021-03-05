@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+}
+
+.back {
+	display: inline-block;
+	position: fixed;
+	z-index: 44;
+}
+
+.back input {
+	border: none;
+	height: 100vh;
+	width: 2vw;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+	font-size: 50px;
+	transition: all .4s;
+} 
+
+.back:hover > input {
+	background-color: #1c4024;
+	width: 5vw;
+}
+
+
+header {
+	width: 100vw;
+	height: 80vh;
+	background-image: url(img/headast.png); 
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 50px 200px;
+
+}
+
+header h1 {
+	font-family: 'Chelsea Market', cursive;
+	text-transform: uppercase;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+header p {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 220px;
+}
+
+article {
+	width: 100vw;
+	height: 30vh;
+	position: relative;
+	padding-top: 10vh;
+	transition: all .4s;
+}
+
+article:hover {
+	padding-top: 0;
+}
+
+article img.hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 30vh;
+	opacity: 0;
+	transition: all .4s;
+	z-index: -4;
+}
+
+article:hover > img.hover {
+	opacity: 0.3;
+}
+
+article h1 {
+	font-family: 'Chelsea Market', cursive;
+	text-transform: uppercase;
+	color: white;
+	font-size: 60px;
+	margin: auto;
+	width: 310px;
+	transition: all .4s;
+	display: block;
+}
+
+article:hover > h1 {
+	font-size: 40px;
+	width: 210px;
+}
+
+.piq4 {
+	height: 5vh;
+	transform: translateY(-2.5vh);
+	border-radius: 15px;
+	margin-left: 200px;
+	opacity: 0;
+	transition: all .4s;
+}
+
+.p3 {
+	margin-left: 100px !important;
+}
+
+article:hover > .piq4 {
+	opacity: 1;
+	height: 23vh;
+}
+
+article p {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	width: 60vw;
+	text-align: center;
+	transform: translateY(-7vh);
+	margin-left: 100px;
+	opacity: 0;
+	transition: all .4s;
+}
+
+article:hover > p {
+	opacity: 1;
+}
+

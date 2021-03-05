@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.back {
+	display: inline-block;
+}
+
+.back input {
+	border: none;
+	height: 100vh;
+	width: 2vw;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+	font-size: 50px;
+	transition: all .4s;
+} 
+
+.back:hover > input {
+	background-color: #1c4024;
+	width: 5vw;
+}
+
+.back:hover + main {
+	width: 95vw;
+}
+
+.back:hover + main .cont {
+	width: 47.5vw;
+}
+
+main {
+	width: 98vw;
+	float: right;
+	transition: all .4s;
+}
+
+.cont {
+	width: 49vw;
+	height: 50vh;
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	border-radius: 15px;
+	transition: all .4s;
+}
+
+.cont p{
+	margin: 20px;
+	margin-top: 60px;
+	opacity: 0;
+	transition: all .8s;
+	font-size: 14px;
+}
+
+.cont h1{
+	margin: 100px;
+	text-align: center;
+	font-size: 43px;
+	transition: all .8s;
+}
+
+.cont img {
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	opacity: 0.2;
+	pointer-events: none;
+	user-select: none;
+	transition: opacity .8s;
+	z-index: -1;
+	border-radius: 50px;
+	margin-left: 1.5em;
+	margin-top: 0.8em;
+}
+
+.cont:hover > img {
+	opacity: 0.4;
+}
+
+.cont:hover > h1 {
+	font-size: 32px;
+	margin: 20px;
+}
+
+.cont:hover > p {
+	opacity: 1;
+	font-size: 20px;
+}
+
+.cont p{
+	text-align: center;
+}
+
+.c1 {
+	border-bottom: double 8px white;
+	border-right: double 8px white;
+}
+
+.c2 {
+	float: right;
+	border-bottom: double 8px white;
+	border-left: double 8px white;
+}
+
+.c3 {
+	border-right: double 8px white;
+	border-top: double 8px white;
+}
+
+.c4 {
+	float: right;
+	border-top: double 8px white;
+	border-left: double 8px white;
+}
