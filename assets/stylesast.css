@@ -16,6 +16,28 @@ body {
 	width: 100vw;
 }
 
+.back {
+	display: inline-block;
+	position: fixed;
+	z-index: 44;
+}
+
+.back input {
+	border: none;
+	height: 100vh;
+	width: 2vw;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+	font-size: 50px;
+	transition: all .4s;
+} 
+
+.back:hover > input {
+	background-color: #1c4024;
+	width: 5vw;
+}
+
 
 header {
 	width: 100vw;
@@ -24,6 +46,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	padding: 50px 200px;
+
 }
 
 header h1 {
