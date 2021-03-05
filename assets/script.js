@@ -21,6 +21,25 @@
 // 	style.opacity = "0";
 // }
 
+
+(function() {
+	var stil = document.getElementById("dit");
+	var style = stil.style;
+	style.transform = "translateX(-170px) translateY(370px)";
+	var sti = document.getElementById("did");
+	var style = sti.style;
+	style.transform = "translateY(1000px)";
+	var stif = document.getElementById("olk");
+	var style = stif.style;
+	style.transform = "translateY(600px)";
+	var stibub = document.getElementById("bub");
+	var style = stibub.style;
+	style.transform = "translateY(500px)";
+	var stikk = document.getElementById("kk");
+	var style = stikk.style;
+	style.transform = "translateY(500px)";
+})();
+
 function myFunction() {
 	var x = document.getElementsByClassName("dot");
 	for (let i=0; i<x.length; i++) {
@@ -29,13 +48,26 @@ function myFunction() {
 	   	style.transform = "translateX(1000px)";
 	   }
 	   if (i==1) {
-	   	style.transform = "translateX(-800px)";
+	   	style.cssText = "transform: translateX(-170px) translateY(-570px); bottom: 100;";
 	   }
 	   if (i==2) {
-	   style.transform = "translateX(-1000px)";
+	   	style.transform = "translateX(-1000px)";
+		}
+		if (i==3) {
+	   	style.transform = "translateY(0px)";
+		}
+		if (i==4) {
+	   	style.transform = "translateY(0px)";
+		}
+		if (i==5) {
+	   	style.transform = "translateY(0px)";
+		}
+		if (i==6) {
+	   	style.transform = "translateY(0px)";
 		}
 	}
 }
+
 
 
 
@@ -49,5 +81,9 @@ function parallax(e){
 
 		layer.style.transform = `translateX(${x}px) translateY(${y}px)`
 	})
+}
+
+window.onunload=function(){
+history.go(location.href);
 }
 

@@ -9,14 +9,22 @@
 	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="p_prldr">
+		<div class="contpre">
+			<span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small>
+		</div>
+	</div>
 <header>
-	<div class="dot" id="dot">
-		<img src="assets/img/gray.png" alt="">
+	<div class="dot" id="dot"> <!-- 1 -->
+		<img src="assets/img/gray.png" alt=""> 
 	</div>
-	<div class="dot">
-		<img src="assets/img/yelow.png" alt="">
+	<div class="dot" id="dit"> <!-- 2 -->
+		<img onClick="window.location.href='sun.html'" src="assets/img/yelow-big.png" class="sonce" alt="">
+		<div class="nadpis first">
+			<p>Опасность солнца</p>
+		</div>
 	</div>
-	<div class="dot">
+	<div class="dot"> <!-- 3 -->
 		<div class="nav">
 			<nav>
 				<a href="">Кнопка</a>
@@ -25,12 +33,55 @@
 			</nav>
 		</div>
 		<h1>space hazards</h1>
-		<p>wordswordswordswordswordswordswordswordswordswordswordswordswor<br>wordswordswordswordswordswordswordswordswordswordswordswordswor<br>wordswordswordswordswordswordswordswordswordswordswordswordswor</p>
+		<p>Ни для кого не ново, что космос хранит в себе множество секретов. Но способны ли какие-то небесные тела и прочие объекты создать угрозу для жителей Земли? Мы с радостью поделимся с вами своими познаниями.</p>
 		<button type="button" class="btnstart" id="button" onclick="myFunction()">
 			<div class="start"><p>Начать</p></div>			
 		</button>
 	</div>
+	<div class="dot" id="did"> <!-- 4 --> 
+		<div onClick="window.location.href='aster.html'" class="asters">
+			<img src="assets/img/1.png" class="metr meteor1" alt="">
+			<img src="assets/img/2.png" class="metr meteor2" alt="">
+			<img src="assets/img/3.png" class="metr meteor3" alt="">
+			<img src="assets/img/4.png" class="metr meteor4" alt="">
+		</div>	
+		<div class="nadpis second">
+			<p>Опасность астероидов</p>
+		</div>
+	</div>
+	<div class="dot" id="olk"> <!-- 5 --> 
+		<div class="earth">
+			<img src="assets/img/zemlya_bez_oblakov.png" alt="">
+			<img src="assets/img/oblaka_dlya_zemli.png" class="oblaka" alt="">
+		</div>
+	</div>
+	<div class="dot" id="bub"> <!-- 6 --> 
+		<img src="assets/img/stantsia.png" class="stantsia" alt="">
+		<div class="nadpis third">
+			<p>Опасность для людей в космосе</p>
+		</div>
+	</div>
+	<div class="dot" id="kk"> <!-- 7 -->
+		<img src="assets/img/musor.png" class="musor" alt="">
+		<div class="nadpis fourth">
+			<p>Опасность космического мусора</p>
+		</div>
+	</div>
 </header>
 <script src="assets/script.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(5000).fadeOut('slow');
+});</script>
+<script type="text/javascript" src="assets/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".metr"), {
+		max: 25,
+		speed: 50
+	});
+</script>
 </body>
 </html>
