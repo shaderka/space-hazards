@@ -32,7 +32,7 @@ left: 0;
 top: 0;
 right:0;
 bottom:0;
-background: #9A12B3;
+background: #1b0028;
 z-index: 30;}
  
 .contpre small{font-size:25px;}
@@ -97,6 +97,7 @@ margin: -16px 0 0 -16px;}
 	border: 10px solid white;
 	opacity: 0;
 	transition: all .6s;
+	user-select: none;
 }
 
 .sonce:hover + .first {
@@ -142,11 +143,14 @@ margin: -16px 0 0 -16px;}
 
 .fourth {
 	position: absolute;
-	bottom: 30%;
+	bottom: 0;
 	left: -650px;
-	line-height: 50px;
-	font-size: 47px;
-	width: 550px;
+	font-size: 20px;
+	width: 570px;
+	height: 280px;
+	color: white;
+	background: #000;
+	border: 10px solid #ff6500;
 }
 
 .dot:nth-of-type(2) img {
@@ -156,6 +160,7 @@ margin: -16px 0 0 -16px;}
 
 .dot:nth-of-type(2) img:hover {
 	width: 55%;
+	cursor: pointer;
 }
 
 nav a {
@@ -191,6 +196,7 @@ nav a {
 	padding: 20px 120px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+	padding-top: 140px;
 }
 
 .dot:nth-of-type(3) p {
@@ -245,6 +251,10 @@ button.btnstart:hover > .start p {
 	width: 500px;
 	height: 500px;
 	transition: all .5s;
+}
+
+.asters:hover {
+	cursor: pointer;
 }
 
 .asters img {
@@ -315,6 +325,7 @@ img.oblaka {
 
 .dot:nth-of-type(6) img:hover {
 	width: 105%;
+	cursor: pointer;s
 }
 
 .dot:nth-of-type(7) {
